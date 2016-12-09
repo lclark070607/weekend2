@@ -9,9 +9,9 @@ function Sum(one, two) {
     console.log(one + two)
     return one + two;
 }
-    Sum(2, 6);
-    Sum(9.42375, 5.3275)
-    Sum(8, 15)
+Sum(2, 6);
+Sum(9.42375, 5.3275);
+Sum(8, 15);
 
 
 console.log('#2 Avg');
@@ -26,13 +26,13 @@ function avg(one, two, three) {
     console.log((one + two + three) / 3);
     return ((one + two + three) / 3);
 }
-        avg(4, 4, 4);
-        avg(5, 6, 1);
+avg(4, 4, 4);
+avg(5, 6, 1);
 
 //console.log('#2 Avg Josh Code')
 //Josh's Code
 //function avg(first, second, third) {
- //   return (first + second + third) / avg.length;
+//   return (first + second + third) / avg.length;
 
 //}
 
@@ -41,40 +41,94 @@ function avg(one, two, three) {
 //console.log(result);
 
 
-console.log ('#3 greaterThan')
+console.log('#3 greaterThan')
 //Write a function called greaterThan that takes two parameters 
 //and returns true if the second parameter is greater than the first. 
 //Otherwise the function should return false.
 
 function greaterThan(one, two) {
-    if (two > one) 
+
+    if (two > one) {
         console.log('true')
+        return true
+    }
 
-    if (one > two)
+    if (one > two) {
         console.log('false')
-    return ???
+        return false
+    }
 }
-    greaterThan(5, 8);
-    greaterThan(8, 5); 
+greaterThan(5, 8);
+greaterThan(8, 5);
 
 
-console.log ('#4 secondLargest');
+console.log('#4 secondLargest');
 
 //Write a function called secondLargest that takes an array and 
 //returns the second largest number.
 
-function secondLargest(numbers) {
-    let second = 0;
+//my original thoughts on how to work it through
+//1. Determine the largest number of the array (numbers.length).
+//2. Return the second largest number ()
+
+
+//CODE based on Tallest Mountain:
+
+function findLargest(numbers) {
+    let leader = 0;
 
     for (let i = 0; i < numbers.length; i++) {
 
-
-        second - largest
-
+        if (leader < numbers[i]) {
+            leader = numbers[i];
+        }
     }
+    // console.log(leader);
+    return leader;
 }
 
-        
+findLargest([2, 5, 100, 76]);
 
-      
-    
+function findSecondLargest(numbers) {
+    let largest = findLargest(numbers);
+    let newarray = [];
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] !== largest) {
+            newarray.push(numbers[i]);
+        }
+    }
+//go through the loop and copy the array minus the largest
+
+
+
+
+    return findLargest(newarray);
+
+    // let leader2 = (numbers[leader] - numbers[i]);
+    // }
+}
+
+console.log(findSecondLargest([2, 5, 100, 76]));
+
+
+
+
+
+
+
+
+ //be sure and put [] around the array because 'numbers' is only one perameter
+
+ //Test1:console.log(numbers.length)
+//Test2: console.log(leader)
+
+
+
+
+
+
+
+
+
+
