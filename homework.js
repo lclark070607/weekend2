@@ -111,18 +111,36 @@ function findSecondLargest(numbers) {
 
 console.log(findSecondLargest([2, 5, 100, 76]));
 
-
-
-
-
-
-
-
- //be sure and put [] around the array because 'numbers' is only one perameter
+//be sure and put [] around the array because 'numbers' is only one perameter
 
  //Test1:console.log(numbers.length)
 //Test2: console.log(leader)
 
+
+console.log('#5 containsVowel');
+
+//Write a function called containsVowel that takes a single string and 
+//returns true if there is at least one value or false otherwise.
+
+function containsVowel(string) {
+
+    let vowel = 'a' || 'e'
+
+    for (let i = 0; i < string.length; i++) {
+        
+        if (string[i] === vowel) {
+            console.log('true') 
+            return true  
+        }
+
+        if (string[i] !== vowel) {
+            console.log('false')
+            return false
+        }
+    } 
+}
+        containsVowel('eat');
+    
 
 
 
