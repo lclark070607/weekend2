@@ -140,9 +140,32 @@ function containsVowel(string) {
     } 
 }
         containsVowel('eat');
+
+        //first stage:  got function to work but only with one vowel, or with checking against one vowel.
+        //need to figure out how to say 'and' & 'or'
+
+        
+        console.log('#10 bonus');
+
+        //Jeb eats out at restaurants all the time but is horrible at math. 
+        //He decides to write a function called bonus() 
+        //that accepts a single parameter (the cost of the meal), 
+        //and should return the tip Jeb should give his waiter. 
+        //Jeb uses two rules to calculate tips:
+
+        //First he always tips 20% on the original bill.
+        //He then rounds up to the nearest dollar. 
+        //For example, if the total with tip is $22.78, he'd round up to $23.00.
     
 
+    function bonus(cost) {
+        
+        let total = ((cost * .20) + cost) 
+        console.log(total);
 
+    //I know I need to use math.ceil but I can't get it to read total
+}
+        bonus(24);
 
 
 
