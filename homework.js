@@ -124,7 +124,7 @@ console.log('#5 containsVowel');
 
 function containsVowel(string) {
 
-    let vowel = 'a' || 'e'
+    let vowel = 'e';
 
     for (let i = 0; i < string.length; i++) {
         
@@ -139,11 +139,49 @@ function containsVowel(string) {
         }
     } 
 }
-        containsVowel('eat');
+        containsVowel('bet');
 
         //first stage:  got function to work but only with one vowel, or with checking against one vowel.
         //need to figure out how to say 'and' & 'or'
 
+        console.log('#5 containsVowel alt')
+        function containsVowel(string) {
+
+    let vowel = ['a', 'e',  'i', 'o', 'u'];
+
+    for (let i = 0; i < string.length; i++) {
+        
+        if (string.length === vowel[0] || vowel[1] || vowel[2] || vowel[3] || vowel[4]) {
+            console.log('true') 
+               return true  
+        }    
+
+
+        if (string.length !== vowel[0] || vowel[1] || vowel[2] || vowel[3] || vowel[4]) {
+            console.log('false')
+            return false
+        }
+    }
+}
+
+        containsVowel('hgtn');
+
+        
+        console.log('#7 longestWord');
+        function longestWord()
+        
+       // console.log('#9 Weave');
+
+        //Write a function called weave() that accepts an input string and number. 
+        //The function should return the string 
+        //with every xth character replaced with an 'x'.
+
+        //function weave(string1) {
+            //let freq = 0;
+
+            //for (let i = 0; i < string1.length; i++) {
+                
+        //}
         
         console.log('#10 bonus');
 
@@ -160,12 +198,16 @@ function containsVowel(string) {
 
     function bonus(cost) {
         
-        let total = ((cost * .20) + cost) 
-        console.log(total);
+        function bonus(cost) {
+        
+            let total = ((cost * .20) + cost);
 
-    //I know I need to use math.ceil but I can't get it to read total
+            let total2 = Math.ceil(total);
+        
+        console.log(total2);
+        return total2;
 }
-        bonus(24);
+    bonus(22.50)
 
 
 
