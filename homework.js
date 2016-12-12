@@ -166,22 +166,136 @@ function containsVowel(string) {
 
         containsVowel('hgtn');
 
+        console.log('#5 containsVowel alt2')
+
+        function containsVowel(string) { 
+            let vowel = ['a' || 'e' || 'i' || 'o' || 'u'];
+
+            for (let i = 0; i < string.length; i++) {
+        
+        if (string[i] === string.match) {
+            console.log('true') 
+            return true  
+        }
+
+        if (vowel !== string.match) {
+            console.log('false')
+            return false
+        }
+    } 
+        }
+
+        console.log('#5containsVowel alt 3')
+        function containsVowel(string) {
+            let vowel = ('aeiouAEIOU');
+            let abc = vowel.split("");
+
+            for (let i = 0; i < string.length; i++) {
+            
+            if (string.split === abc) {
+                console.log ('true');
+                return true
+            }
+
+            if (string.split !== abc) {
+                console.log ('false');
+                return false
+            }
+
+            }
+
+        }
+            containsVowel('short');
+        
+        
+        console.log('#6 piglatin')
+        //Write a function called piglatin that takes a single string and returns the piglatin version of that string.
+        //Hint: look into the split() function that you can call on strings.
+
+        //Write a function called piglatin that takes a single string and returns the piglatin version of that string.
+
+        //Hint: look into the split() function that you can call on strings.
+        //pig is igpay
+
+        //1. Remove beginning letter from word.
+        //2. add beginning letter to end of remaining root.
+        //3. repeat through all words.
+
+        //** I know I need to use the splice function.  I wanted to use it like 
+        //this video example where you can splice and replace at the same time.
+
+        function piglatin(words) {
+
+            for (let i = 0; i < words.length; i++) {
+                let words = words.splice(0);
+                console.log(words);
+            }
+        
+        piglatin(pig);
+        }
+
         
         console.log('#7 longestWord');
-        function longestWord()
         
-       // console.log('#9 Weave');
+        //Write a function called longestWord that takes a single string and returns the longest word in the string.
 
+        //Hint: look into the split() function that you can call on strings.
+        
+        //1.  Establish a single string.
+        //2.  Use the split function to establish an array of words.
+        //3.  Iterate over each split/word length to discover longest word.
+        //4.  Return longest word.
+
+        function longestWord(sentence) {
+
+        //let sentence = "How did Trump ever get elected?";
+        //let answer = sentence.split(" ");
+        //console.log(answer);
+
+            let string123 = sentence.split(" ");
+            let longest = 0;
+            let keeper = " ";
+
+            for (let i = 0; i < string123.length; i++) {
+            
+                if  (string123.length > longest) {
+                longest = string123[i];
+
+                keeper = string123[i];
+
+                }
+                return keeper
+            }
+        }
+        
+        longestWord("How did Trump ever get elected?");
+          
+        console.log('#8 divisors');
+
+        //Write a function called divisors that accepts a number 
+        //and returns an array of all of the numbers that divide evenly into it.
+        //1.  Establish a number.
+        //2.  Determine all of the numbers that divide evenly into that number.
+        //3.  Return an array of all the divisors. 
+        functiondivisors {
+
+        }
+
+        console.log(#9 weave);
         //Write a function called weave() that accepts an input string and number. 
         //The function should return the string 
         //with every xth character replaced with an 'x'.
 
-        //function weave(string1) {
-            //let freq = 0;
+        //1.   Establish the string.
+        //2.  Iterate over the string and remove every xth value in the string.
+        //3.  Replace every xth character with x.
 
-            //for (let i = 0; i < string1.length; i++) {
+         function weave(string, two) {
+            let freq = 0;
+
+            for (let i = 0; i < string1.length; i++) {
                 
-        //}
+        }
         
         console.log('#10 bonus');
 

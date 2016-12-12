@@ -1,12 +1,24 @@
-// console.log('#9 Weave');
+function longestWord(sentence) {
 
-        //Write a function called weave() that accepts an input string and number. 
-        //The function should return the string 
-        //with every xth character replaced with an 'x'.
+        //let sentence = "How did Trump ever get elected?";
+        //let answer = sentence.split(" ");
+        //console.log(answer);
 
-        //function weave(string1) {
-            //let freq = 0;
+        let string123 = sentence.split(" ");
+        let longest = 0;
+        let keeper = " ";
 
-            //for (let i = 0; i < string1.length; i++) {
-                
-        //}
+        for (let i = 0; i < string123.length; i++) {
+            if  (string123.length > longest) {
+                longest = string123[i];
+
+            keeper = string123[i];
+
+            }
+        return keeper
+    
+    }
+}
+        longestWord("How did Trump ever get elected?");
+
+
